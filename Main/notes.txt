@@ -4,9 +4,9 @@ Zillow dataset has zipcodes/permits/etc.
 
 Aggregate permits to show which zipcodes have the most permits for remodeling, electrical/plumbing workclass remodel, addition and remodel workclass.
 
-top 10% pf zipcodes (by permit count) = gentrified
+top 10% pf zipcodes (by permit count) = candidate
 
-Iterate through db, and if zipcode is in 'gentrified' list, add 1 to 'YES_DEVELOP' column; otherwise add 0.
+Iterate through db, and if zipcode is in 'candidate' list, add 1 to 'YES_CANDIDATE' column; otherwise add 0.
 
 Train model to be accurate with current data and predictive with new datasets.
 
