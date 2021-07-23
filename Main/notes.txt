@@ -1,0 +1,13 @@
+General workflow:
+
+Zillow dataset has zipcodes/permits/etc.
+
+Aggregate permits to show which zipcodes have the most permits for remodeling, electrical/plumbing workclass remodel, addition and remodel workclass.
+
+top 10% pf zipcodes (by permit count) = gentrified
+
+Iterate through db, and if zipcode is in 'gentrified' list, add 1 to 'YES_DEVELOP' column; otherwise add 0.
+
+Train model to be accurate with current data and predictive with new datasets.
+
+Once we have a working model based on permits, we can possible look into imcorporating income or property/home value into the model. (??)
