@@ -5,7 +5,7 @@ In the following project, we will survey and forecast urban development using ho
 ## Communication Protocols
 We will be using slack to create a group thread to communicate our progress, findings, and roadblock we may encounter throughout the project. We plan on communicating every other day through slack as a check-in to make sure everyone is staying on track. If a group member runs into any trouble, they are encouraged to post immediately to resolve issues promptly. Although we plan on having check-ins every other day, we are encouraging members to check the slack thread daily just in case any problems arise.
 
-## Database
+## Provisional Database
 
 <h3 align="center"> Provisional ERD </h3>
 <p align = "center">
@@ -25,12 +25,40 @@ After creating the ERD, we created a provisional database in pgAdmin to house th
 
 The resulting queries highlight the successful database integration:
 
-<h3 align="center"> Provisional Database </h3>
+<h3 align="center"> Query 1 </h3>
 <p align = "center">
- <img src="database/images/query1.png", width=500>
+ <img src="database/images/query1.png", width=400>
 </p>
 
-<h3 align="center"> Provisional Database </h3>
+<h3 align="center"> Query 2 </h3>
 <p align = "center">
  <img src="database/images/query2.png", width=500>
 </p>
+
+## Provisional Machine Learning Model
+
+Our provisional machine learning model will attempt to predict the outcome column of the Zillow data frame. The outcome column was created and displays a one if the property is located in a rapidly growing region of the city. Otherwise, the column will display a zero for properties that are not considered to be in rapidly growing areas. The outcomes are provisional and subject to change as well since we have not completed a robust analysis to determine which properties are actually in rapidly developing areas. Nonetheless, we wanted to assess the viability of our model using dummy data. Using scikit-learn, our provisional model uses a decision tree to predict the outcome of each row of our data frame. Considering most of the columns from the Zillow data are categorical, the first step was encoding the columns that contained categorical variables:
+
+<h3 align="center"> Encoding </h3>
+<p align = "center">
+ <img src="model/encoding.png", width=400>
+</p>
+
+From there, we followed the supervised learning workflow of separating the target and features, splitting the data, fitting the model, and then assessing the model performance:
+
+<h3 align="center"> Splitting Data into Training and Testing Sets </h3>
+<p align = "center">
+ <img src="model/splitting.png", width=400>
+</p>
+
+<h3 align="center"> Fitting the Model </h3>
+<p align = "center">
+ <img src="model/fitting.png", width=400>
+</p>
+
+<h3 align="center"> Assessing Performance </h3>
+<p align = "center">
+ <img src="model/report.png", width=400>
+</p>
+
+Our provisional model appears to have symptoms of overfitting, which we will address as we continue to tweak our datasets and the model itself. 
