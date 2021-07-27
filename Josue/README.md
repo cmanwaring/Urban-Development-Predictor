@@ -46,7 +46,7 @@ Our provisional machine learning model will attempt to predict the outcome colum
 
 From there, we followed the supervised learning workflow of separating the target and features, splitting the data, fitting the model, and then assessing the model performance:
 
-<h3 align="center"> Splitting Data into Training and Testing Sets </h3>
+<h3 align="center"> Splitting Target and Features </h3>
 <p align = "center">
  <img src="model/splitting.png", width=400>
 </p>
