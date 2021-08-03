@@ -5,7 +5,7 @@ In the following project, we will survey and forecast urban development using ho
 ## Google Slides
 <p align = "center">
  [Click here to view our Google Slides presentation:](https://docs.google.com/presentation/d/e/2PACX-1vToSjA4FsDQd7r8Lfb7Wp3v1eNIXDADtUv7blib3t4OJ1eGe8hckvWYvLF6YVf44Caw6iTofS1euhOk/pub?start=false&loop=true&delayms=5000)  
- <img src="fig/google_slides_img.png", width=500>
+ <img src="/fig/google_slides_img.png", width=500>
 </p>
 
 ## Communication Protocols
