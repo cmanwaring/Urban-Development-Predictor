@@ -5,6 +5,10 @@ In the following project, we will survey and forecast urban development using ho
 ## Communication Protocols
 We will be using slack to create a group thread to communicate our progress, findings, and roadblock we may encounter throughout the project. We plan on communicating every other day through slack as a check-in to make sure everyone is staying on track. If a group member runs into any trouble, they are encouraged to post immediately to resolve issues promptly. Although we plan on having check-ins every other day, we are encouraging members to check the slack thread daily just in case any problems arise.
 
+## Presentation
+[Google Slides Presentation](https://docs.google.com/presentation/d/e/2PACX-1vToSjA4FsDQd7r8Lfb7Wp3v1eNIXDADtUv7blib3t4OJ1eGe8hckvWYvLF6YVf44Caw6iTofS1euhOk/pub?start=false&loop=true&delayms=30000)  
+![Google Slides Image](images/google_slides_img.png")
+
 ## Provisional Database
 
 <h3 align="center"> Provisional ERD </h3>
