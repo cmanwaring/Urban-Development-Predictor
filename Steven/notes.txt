@@ -4,3 +4,4 @@
  
  Ideas
  - change yearBuilt to homeAge, change "latestPrice" to "valueChange"
+ - make adjustments to variables
