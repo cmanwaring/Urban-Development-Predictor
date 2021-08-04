@@ -70,6 +70,11 @@ After successfully loading the data from the Jupyter notebooks to PostgreSQL wit
 
 ## Provisional Machine Learning Model
 
+ - The preliminary data included columns that describe the amount of permits, latest price, number of price changes, year built, zipcode of homes, etc.
+ - After connecting to the database, we printed out the header for each column to see all of the features available, then chose the features that we believed would have the highest correlation to increased home prices per zip code.
+ - The data was split into training and test data using the train_test_split function. We used the 75% to 25% default split.
+ - We have decided to use the logistic regression model for our machine learning model. We grouped our data into two categories candidate or non candidate for investing. The benefit of this model is that it can be used to predict our binary outcome.
+
 Our provisional machine learning model will attempt to predict the outcome column of the Zillow data frame. The outcome column was created and displays a one if the property is located in a rapidly growing region of the city. Otherwise, the column will display a zero for properties that are not considered to be in rapidly growing areas. The outcomes are provisional and subject to change as well since we have not completed a robust analysis to determine which properties are actually in rapidly developing areas. Nonetheless, we wanted to assess the viability of our model using dummy data. Using scikit-learn, our provisional model uses a decision tree to predict the outcome of each row of our data frame. Considering most of the columns from the Zillow data are categorical, the first step was encoding the columns that contained categorical variables:
 
 <h3 align="center"> Encoding </h3>
