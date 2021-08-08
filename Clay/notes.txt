@@ -1,1 +1,18 @@
-test
+<<<<<<< HEAD
+Final presentation outline:
+---
+Git structure:
+
+Data source:
+
+Data preprocessing:
+
+Data storage:
+
+ML model:
+
+Accuracy training:
+
+Presentation:
+
+Output:
