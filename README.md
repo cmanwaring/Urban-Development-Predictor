@@ -114,7 +114,8 @@ The variables were narrowed down to include columns that describe the amount of 
 
 ### Splitting Target and Features
 
-![2021-08-11 (8)](https://user-images.githubusercontent.com/78937719/128974864-cb272ba2-aa6e-49cd-88c2-f2f7864d2061.png)
+![2021-08-11 (13)](https://user-images.githubusercontent.com/78937719/128976702-8f55bf3b-70b5-4167-a099-1f8a74bfb218.png)
+
 
 ### Training the Model
 The solver "SAGA" was  used to quickly run a large data set
