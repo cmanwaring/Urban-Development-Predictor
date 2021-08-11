@@ -116,7 +116,19 @@ The variables were narrowed down to include columns that describe the amount of 
 
 ![2021-08-11 (8)](https://user-images.githubusercontent.com/78937719/128974864-cb272ba2-aa6e-49cd-88c2-f2f7864d2061.png)
 
-### Fitting the Model
+### Training the Model
+The solver "SAGA" was  used to quickly run a large data set
+
+![2021-08-11 (10)](https://user-images.githubusercontent.com/78937719/128975443-a49e56d5-f41a-46b7-aa01-3dc269ea8da2.png)
+
+### Assessing the Performance
+
+
+![2021-08-11 (12)](https://user-images.githubusercontent.com/78937719/128976331-c34962fa-0088-43a4-9abd-8152fb26952d.png)
+
+ - the precision to predict candidate and non candidates was about the same at 57% and 58% respectively
+ - the sensitivity was much higher on predicting candidates at 82% than non candidates at 28%
+
 
 
 
