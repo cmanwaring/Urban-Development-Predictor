@@ -3,6 +3,13 @@
 We are analyzing housing data to determine which areas of the Austin metropolitan area will experience the most growth by zip code. Our aim is to to predict home value appreciation and which zip codes would be a good candidate for real estate investments, with an accurate machine learning model that could ideally be applied in other housing markets. We've chosen this topic because Austin is growing at an astronomical rate due to major industries such as space technology, creative and digital media technology, as well as advanced manufactoring and other industries moving into the area. 
 We have selected permit data from the City of Austin along with home listing data from Kaggle to assess which zip codes are candidates for investment. Our hypothesis is: if the city of Austin is issuing more permits in certain zip codes, those zip codes are experiencing more rapid growth, and therefore an increase in housing value.  
 
+## Overview:
+
+<h3 align="center"> Process </h3>
+<p align = "center">
+ <img src="images/process.png", width=700>
+</p>
+
 ## Communication Protocols
 We will be using slack to create a group thread to communicate our progress, findings, and roadblock we may encounter throughout the project. We plan on communicating every other day through slack as a check-in to make sure everyone is staying on track. If a group member runs into any trouble, they are encouraged to post immediately to resolve issues promptly. Although we plan on having check-ins every other day, we are encouraging members to check the slack thread daily just in case any problems arise.
 
