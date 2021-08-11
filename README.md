@@ -132,7 +132,7 @@ The solver "SAGA" was  used to quickly run a large data set
  - the sensitivity was much higher on predicting candidates at 82% than non candidates at 28%
 
 
-## Dashboard with Visualizations
+## Visualizations
 https://public.tableau.com/views/AustinUrbanDevelopment/AustinGrowthStoryboard?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link
 
 
