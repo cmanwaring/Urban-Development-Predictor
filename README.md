@@ -7,6 +7,7 @@ We have selected permit data from the City of Austin along with home listing dat
 [Google Slides Presentation](https://docs.google.com/presentation/d/e/2PACX-1vToSjA4FsDQd7r8Lfb7Wp3v1eNIXDADtUv7blib3t4OJ1eGe8hckvWYvLF6YVf44Caw6iTofS1euhOk/pub?start=false&loop=true&delayms=30000)  
 ![Google Slides Presentation Image](images/google_slides_img.png)
 
+
 ## Database
 
 <h3 align="center"> ERD </h3>
@@ -131,6 +132,8 @@ The solver "SAGA" was  used to quickly run a large data set
  - the sensitivity was much higher on predicting candidates at 82% than non candidates at 28%
 
 
+## Dashboard with Visualizations
+https://public.tableau.com/views/AustinUrbanDevelopment/AustinGrowthStoryboard?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link
 
 
 
