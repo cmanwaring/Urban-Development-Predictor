@@ -98,3 +98,30 @@ From there, we followed the supervised learning workflow of separating the targe
 </p>
 
 Our provisional model appears to have symptoms of overfitting, which we will address as we continue to tweak our datasets and the model itself. 
+
+## Logistic Regression Model
+
+Because the of the overfitting in the decision tree classifier model, we decided to use a Logistic Regression Model.  The main benefit of using this model is that it allows us to predict a binary outcome - candidate or non candidate.
+
+### Preprocessing the Data
+The variables were narrowed down to include columns that describe the amount of permits, latest price, number of price changes, year built, zipcode of homes, etc.
+
+![2021-08-11 (1)](https://user-images.githubusercontent.com/78937719/128974144-b289ad55-c70c-4d47-86f1-818c87ba3e5f.png)
+
+### Encoding the Categorical Variables
+
+![2021-08-11 (7)](https://user-images.githubusercontent.com/78937719/128974488-f226398a-f5aa-4736-86f5-97b00b371cfa.png)
+
+### Splitting Target and Features
+
+![2021-08-11 (8)](https://user-images.githubusercontent.com/78937719/128974864-cb272ba2-aa6e-49cd-88c2-f2f7864d2061.png)
+
+### Fitting the Model
+
+
+
+
+
+
+
+
