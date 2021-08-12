@@ -1,7 +1,0 @@
-## Preprocessing Data Notes
- - adding average school rating
- - drop "city", "zipid", "homeType" columns
- 
- Ideas
- - change yearBuilt to homeAge, change "latestPrice" to "valueChange"
- - make adjustments to variables
