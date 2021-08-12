@@ -3,78 +3,10 @@
 We are analyzing housing data to determine which areas of the Austin metropolitan area will experience the most growth by zip code. Our aim is to to predict home value appreciation and which zip codes would be a good candidate for real estate investments, with an accurate machine learning model that could ideally be applied in other housing markets. We've chosen this topic because Austin is growing at an astronomical rate due to major industries such as space technology, creative and digital media technology, as well as advanced manufactoring and other industries moving into the area. 
 We have selected permit data from the City of Austin along with home listing data from Kaggle to assess which zip codes are candidates for investment. Our hypothesis is: if the city of Austin is issuing more permits in certain zip codes, those zip codes are experiencing more rapid growth, and therefore an increase in housing value.  
 
-## Overview:
-
-<h3 align="center"> Process </h3>
-<p align = "center">
- <img src="images/process.png", width=700>
-</p>
-
-## Communication Protocols
-We will be using slack to create a group thread to communicate our progress, findings, and roadblock we may encounter throughout the project. We plan on communicating every other day through slack as a check-in to make sure everyone is staying on track. If a group member runs into any trouble, they are encouraged to post immediately to resolve issues promptly. Although we plan on having check-ins every other day, we are encouraging members to check the slack thread daily just in case any problems arise.
-
 ## Presentation
 [Google Slides Presentation](https://docs.google.com/presentation/d/e/2PACX-1vToSjA4FsDQd7r8Lfb7Wp3v1eNIXDADtUv7blib3t4OJ1eGe8hckvWYvLF6YVf44Caw6iTofS1euhOk/pub?start=false&loop=true&delayms=30000)  
 ![Google Slides Presentation Image](images/google_slides_img.png)
 
-## Database
-
-<h3 align="center"> ERD </h3>
-<p align = "center">
- <img src="database/ERD.png", width=500>
-</p>
-
-The three CSV tables used throughout our project required tremendous amounts of preprocessing before we could export them to PostgreSQL: 
-- Zillow home listing CSV
-  - The home listing dataset was in the best conditions in terms of formatting and consistency.
-  - Two summarized tables were created and exported with the original table after processing.
-  - tables: homes, candidates, average_price
-- Permit CSV
-  - The permit CSV was wide data; processing required condensing the table to a long format to establish connections with other tables.
-  - Two other summarized tables were also created and exported with the original.
-  - tables: issued_permits, issued_permit_avg, issued_permit_sum
-- Zillow home value index CSV
-  - Similar processing as permit data and exported with a summarized table
-  - tables: values_over_time, zipcodes_avg_values
-
-### Database Tools
-- PostgreSQL → Relational Database implemented
-- Pandas → Data processing & Transformation
-- SQLALchemy → Exporting data from pandas to PostgreSQL
-
-After creating the ERD, we created a database in pgAdmin to house the data we explored. The following images display the connection strings used to load the data from the Jupyter notebooks to Postgres:
-
-<h3 align="center"> Connection String </h3>
-<p align = "center">
- <img src="database/images2/string1.png", width=500>
-</p>
-
-<h3 align="center"> Connection String </h3>
-<p align = "center">
- <img src="database/images2/string2.png", width=500>
-</p>
-
-<h3 align="center"> Connection String </h3>
-<p align = "center">
- <img src="database/images2/string3.png", width=500>
-</p>
-
-After successfully loading the data from the Jupyter notebooks to PostgreSQL with the help of pandas and SQLAlchemy, we manually altered each table to establish the the relationships among the tables. 
-
-<h3 align="center"> Homes Table </h3>
-<p align = "center">
- <img src="database/images2/homes.png", width=700>
-</p>
-
-<h3 align="center"> Values over Time Table </h3>
-<p align = "center">
- <img src="database/images2/values_time.png", width=600>
-</p>
-
-<h3 align="center"> SQL INNER JOIN </h3>
-<p align = "center">
- <img src="database/images2/join2.png", width=700>
-</p>
 
 ## Provisional Machine Learning Model
 
@@ -108,3 +40,46 @@ From there, we followed the supervised learning workflow of separating the targe
 </p>
 
 Our provisional model appears to have symptoms of overfitting, which we will address as we continue to tweak our datasets and the model itself. 
+
+## Logistic Regression Model
+
+Because the of the overfitting in the decision tree classifier model, we decided to use a Logistic Regression Model.  The main benefit of using this model is that it allows us to predict a binary outcome - candidate or non candidate.
+
+### Preprocessing the Data
+The variables were narrowed down to include columns that describe the amount of permits, latest price, number of price changes, year built, zipcode of homes, etc.
+
+![2021-08-11 (1)](https://user-images.githubusercontent.com/78937719/128974144-b289ad55-c70c-4d47-86f1-818c87ba3e5f.png)
+
+### Encoding the Categorical Variables
+
+![2021-08-11 (7)](https://user-images.githubusercontent.com/78937719/128974488-f226398a-f5aa-4736-86f5-97b00b371cfa.png)
+
+### Splitting Target and Features
+
+![2021-08-11 (13)](https://user-images.githubusercontent.com/78937719/128976702-8f55bf3b-70b5-4167-a099-1f8a74bfb218.png)
+
+
+### Training the Model
+The solver "SAGA" was  used to quickly run a large data set
+
+![2021-08-11 (10)](https://user-images.githubusercontent.com/78937719/128975443-a49e56d5-f41a-46b7-aa01-3dc269ea8da2.png)
+
+### Assessing the Performance
+
+
+![2021-08-11 (12)](https://user-images.githubusercontent.com/78937719/128976331-c34962fa-0088-43a4-9abd-8152fb26952d.png)
+
+ - the precision to predict candidate and non candidates was about the same at 57% and 58% respectively
+ - the sensitivity was much higher on predicting candidates at 82% than non candidates at 28%
+
+
+## Visualizations
+https://public.tableau.com/views/AustinUrbanDevelopment/AustinGrowthStoryboard?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link
+
+## Dashboard
+https://public.tableau.com/views/AustinUrbanDevelopment-Dashboard/Dashboard2?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link
+
+
+
+
+
